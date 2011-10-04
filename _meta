@@ -1,0 +1,15 @@
+<package project="Mer:Trunk:Base" name="make">
+  <title>A GNU tool which simplifies the build process for users</title>
+  <description>A GNU tool for controlling the generation of executables and other
+non-source files of a program from the program's source files. Make
+allows users to build and install packages without any significant
+knowledge about the details of the build process. The details about
+how the program should be built are provided for make in the program's
+makefile.
+
+
+
+
+</description>
+  <url>http://www.gnu.org/software/make/</url>
+</package>

@@ -1,0 +1,11 @@
+--- make-3.80/make.h.jj	2002-09-11 12:55:44.000000000 -0400
++++ make-3.80/make.h	2005-03-07 09:24:53.000000000 -0500
+@@ -474,7 +474,7 @@ extern long int lseek ();
+ #endif  /* Not GNU C library or POSIX.  */
+ 
+ #ifdef  HAVE_GETCWD
+-# if !defined(VMS) && !defined(__DECC)
++# if !defined(VMS) && !defined(__DECC) && !defined(getcwd)
+ extern char *getcwd ();
+ #endif
+ #else

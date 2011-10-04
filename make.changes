@@ -1,0 +1,11 @@
+* Sun Apr 12 2009 Anas Nashif <anas.nashif@intel.com> 3.81
+- add a link to gmake
+
+* Thu Dec 18 2008 Arjan van de Ven <arjan@linux.intel.com> 3.81
+- Use standard specfile
+
+* Thu Sep 18 2008 Austin Zhang <austin.zhang@intel.com> 3.81
+- add check for the info file before installation
+
+* Wed Jul 23 2008 Xu Li <xu.li@intel.com>
+- add %doc to man/info in %files

@@ -1,0 +1,28 @@
+Name: make
+Summary: A GNU tool which simplifies the build process for users
+Version: 3.81
+Release: 1
+Group: Development/Tools
+License: GPLv2+
+URL: http://www.gnu.org/software/make/
+Sources:
+    - ftp://ftp.gnu.org/gnu/make/make-%{version}.tar.bz2
+Patches:
+    - make-3.79.1-noclock_gettime.patch
+    - make-3.80-j8k.patch
+    - make-3.80-getcwd.patch
+    - make-3.81-err-reporting.patch
+    - make-3.81-memory.patch
+    - make-3.81-rlimit.patch
+    - make-3.81-newlines.patch
+    - make-3.81-jobserver.patch
+Description: |
+    A GNU tool for controlling the generation of executables and other
+    non-source files of a program from the program's source files. Make
+    allows users to build and install packages without any significant
+    knowledge about the details of the build process. The details about
+    how the program should be built are provided for make in the program's
+    makefile.
+
+Configure: configure
+LocaleName: make
