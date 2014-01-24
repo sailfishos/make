@@ -22,6 +22,7 @@ Patch4:     make-3.81-memory.patch
 Patch5:     make-3.81-rlimit.patch
 Patch6:     make-3.81-newlines.patch
 Patch7:     make-3.81-jobserver.patch
+Patch8:     make-aarch64.patch
 Requires(post):  /sbin/install-info
 Requires(postun):  /sbin/install-info
 
@@ -48,6 +49,8 @@ makefile.
 %patch5 -p1
 %patch6 -p1
 %patch7 -p1
+%patch8 -p1
+
 # >> setup
 # << setup
 
