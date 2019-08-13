@@ -2,7 +2,7 @@
 Summary: A GNU tool which simplifies the build process for users
 Name: make
 Version: 4.2.1
-Release: 1
+Release: 2
 License: GPLv3+
 URL: http://www.gnu.org/software/make/
 Source: ftp://ftp.gnu.org/gnu/make/make-%{version}.tar.bz2
