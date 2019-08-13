@@ -35,7 +35,6 @@ Patch8: make-4.2.1-test-driver.patch
 
 # autoreconf
 BuildRequires: autoconf, automake, gettext-devel
-BuildRequires: procps
 BuildRequires: perl
 BuildRequires: gcc
 
