@@ -1,0 +1,6 @@
+[submodule "upstream"]
+	path = upstream
+	url = https://git.savannah.gnu.org/git/make.git
+[submodule "gnulib"]
+	path = gnulib
+	url = https://github.com/sailfishos-mirror/gnulib.git

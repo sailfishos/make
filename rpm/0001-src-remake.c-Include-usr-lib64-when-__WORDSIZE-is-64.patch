@@ -1,0 +1,32 @@
+From a6ff7453b5cc1e207257d56b913406cf9f9ca4a2 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bj=C3=B6rn=20Bidar?= <bjorn.bidar@jolla.com>
+Date: Sat, 30 Mar 2024 22:36:42 +0200
+Subject: [PATCH] * src/remake.c: Include (/usr)/lib64 when __WORDSIZE is 64
+
+make searches for -lfoo targets in /lib and /usr/lib after mangling
+them with .LIBPATTERNS into libfoo.so
+
+This patch extends the search path to /lib64 and /usr/lib64
+Inspired by a patch based on froh@suse.de.
+---
+ src/remake.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/src/remake.c b/src/remake.c
+index fe67ab28..3cbaaf18 100644
+--- a/src/remake.c
++++ b/src/remake.c
+@@ -1693,6 +1693,10 @@ library_search (const char *lib, FILE_TIMESTAMP *mtime_ptr)
+       "/lib",
+       "/usr/lib",
+ #endif
++#if __WORDSIZE == 64
++      "/lib64",
++      "/usr/lib64",
++#endif
+ #if defined(WINDOWS32) && !defined(LIBDIR)
+ /*
+  * This is completely up to the user at product install time. Just define
+-- 
+2.44.0
+
