@@ -1,3 +1,6 @@
+* Mon Apr 14 2025 Matti Lehtimäki <matti.lehtimaki@jolla.com> - 4.4.1
+- [make] Update to 4.4.1. JB#50417
+
 * Tue Aug 13 2019 Marko Saukko <marko.saukko@jolla.com> - 4.2.1-2
 - [make] Drop dependency procps. Contributes to JB#46697
 
